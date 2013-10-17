@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "SignUp";
+}
+<link href="~/Content/signup.css" rel="stylesheet" />
+@using (Html.BeginForm("SignUp", "Account", FormMethod.Post, new {role = "form", id="signup-form"}))
+{
+    <h2 class="text-center">Create Account</h2>
+    <input type="text" class="form-control" placeholder="Email" autofocus="true"/>
+    <input type="text" class="form-control" placeholder="Password" />
+    <input type="submit" class="btn btn-lg btn-primary" value="Submit" />
+}
