@@ -15,7 +15,7 @@ namespace FriendsApp.Controllers
         private readonly AppEntities db;
         private readonly EmailSender mailSender;
 
-        public AccountController(AppEntities db, EmailSender mailSender)//, EmailSender mailSender)
+        public AccountController(AppEntities db, EmailSender mailSender)
         {
             this.db = db;
             this.mailSender = mailSender;
@@ -26,11 +26,11 @@ namespace FriendsApp.Controllers
             User user = db.Users.FirstOrDefault(u => u.ActivationCode == code);
             if (user == null)
             {
-                TempData["error"] = "No user with given activation code was found";
+                TempData["danger"] = "No user with given activation code was found";
                 return RedirectToAction("Index", "Home");
             }
             user.IsActivated = true;
-            TempData["success"] = "Your account has been activated. You can sign in now.";
+            TempData["success"] = "Your account has been activated. You can sign in now";
             return RedirectToAction("Index", "Home");
         }
 
@@ -49,7 +49,7 @@ namespace FriendsApp.Controllers
             User existingUser = db.Users.FirstOrDefault(u => u.Email == model.Email);
             if (existingUser != null)
             {
-                ModelState.AddModelError("", "Email is already taken. Choose another.");
+                ModelState.AddModelError("", "Email is already taken. Choose another");
                 return View(model);
             }
             string activationCode = Guid.NewGuid().ToString();
@@ -68,10 +68,10 @@ namespace FriendsApp.Controllers
             newUser.Password = hashedPassword;
             newUser.ActivationCode = activationCode;
             newUser.IsActivated = false;
-            newUser.Role = "User";
+            newUser.Role = Role.User;
             db.Users.Add(newUser);
             db.SaveChanges();
-            TempData["success"] = string.Format("An email with activation link has been sent to {0}. Check it out.",
+            TempData["success"] = string.Format("An email with activation link has been sent to {0}. Check it out",
                 model.Email);
             return RedirectToAction("Index", "Home");
         }

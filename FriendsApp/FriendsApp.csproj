@@ -158,6 +158,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FriendsAppEntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>FriendsAppEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\User.cs">
       <DependentUpon>FriendsAppEntities.tt</DependentUpon>
     </Compile>

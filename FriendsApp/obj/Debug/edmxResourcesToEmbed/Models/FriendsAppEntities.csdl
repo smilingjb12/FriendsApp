@@ -12,6 +12,10 @@
     <Property Type="String" Name="Password" Nullable="false" />
     <Property Type="String" Name="ActivationCode" Nullable="false" />
     <Property Type="Boolean" Name="IsActivated" Nullable="false" />
-    <Property Type="String" Name="Role" Nullable="false" />
+    <Property Type="AppContainer.Role" Name="Role" Nullable="false" />
   </EntityType>
+  <EnumType Name="Role">
+    <Member Name="User" />
+    <Member Name="Admin" />
+  </EnumType>
 </Schema>

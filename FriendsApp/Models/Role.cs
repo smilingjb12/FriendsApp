@@ -10,15 +10,10 @@
 namespace FriendsApp.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class User
+    public enum Role : int
     {
-        public int Id { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string ActivationCode { get; set; }
-        public bool IsActivated { get; set; }
-        public Role Role { get; set; }
+        User = 0,
+        Admin = 1
     }
 }

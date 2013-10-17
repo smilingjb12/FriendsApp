@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, and Azure
 -- --------------------------------------------------
--- Date Created: 10/17/2013 15:53:27
+-- Date Created: 10/17/2013 17:04:44
 -- Generated from EDMX file: C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\Models\FriendsAppEntities.edmx
 -- --------------------------------------------------
 
@@ -37,7 +37,7 @@ CREATE TABLE [dbo].[Users] (
     [Password] nvarchar(max)  NOT NULL,
     [ActivationCode] nvarchar(max)  NOT NULL,
     [IsActivated] bit  NOT NULL,
-    [Role] nvarchar(max)  NOT NULL
+    [Role] int  NOT NULL
 );
 GO
 

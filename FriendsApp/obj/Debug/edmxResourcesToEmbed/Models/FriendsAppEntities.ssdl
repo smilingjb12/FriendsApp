@@ -12,6 +12,6 @@
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ActivationCode" Type="nvarchar(max)" Nullable="false" />
     <Property Name="IsActivated" Type="bit" Nullable="false" />
-    <Property Name="Role" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Role" Type="int" Nullable="false" />
   </EntityType>
 </Schema>
