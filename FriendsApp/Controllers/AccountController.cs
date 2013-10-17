@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using FriendsApp.ViewModels;
 
 namespace FriendsApp.Controllers
 {
@@ -14,9 +15,13 @@ namespace FriendsApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult SignUp(int x)
+        public ActionResult SignUp(SignUpViewModel model)
         {
-            return null;
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            return RedirectToAction("Index", "Home");
         }
     }
 }
