@@ -47,6 +47,15 @@
     </div>
     <div id="wrap">
         <div class="container">
+            @if (TempData.Keys.Any())
+            {
+                string alertType = TempData.Keys.First();
+                string message = TempData[alertType] as string;
+                <div class="alert alert-dismissable alert-@alertType">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  @message
+                </div>
+            }
             @RenderBody()
         </div>
     </div>

@@ -5,10 +5,10 @@
 
 <link href="~/Content/signup.css" rel="stylesheet" />
 
-@Html.ValidationSummary(excludePropertyErrors: true)
 @using (Html.BeginForm("SignUp", "Account", FormMethod.Post, new {role = "form", id="signup-form"}))
 {
     <h2 class="text-center">Create Account</h2>
+    @Html.ValidationSummary(excludePropertyErrors: true)
     @Html.ValidationMessageFor(m => m.Email)
     @Html.TextBoxFor(m => m.Email, new { placeholder = "Email", autofocus = true, @class = "form-control" })
     @Html.ValidationMessageFor(m => m.Password)

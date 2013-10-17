@@ -28,3 +28,13 @@ C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\
 C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\obj\Debug\FriendsApp.csprojResolveAssemblyReference.cache
 C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\obj\Debug\FriendsApp.dll
 C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\obj\Debug\FriendsApp.pdb
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.dll
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.Web.Common.dll
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.Web.Mvc.dll
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\WebActivator.dll
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.pdb
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.xml
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.Web.Common.pdb
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.Web.Common.xml
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.Web.Mvc.pdb
+C:\Users\Fluffy\Documents\Visual Studio 2012\Projects\FriendsApp\FriendsApp\bin\Ninject.Web.Mvc.xml

@@ -11,3 +11,12 @@
 .field-validation-error {
     color: #e61313;
 }
+
+.validation-summary-errors > ul {
+    list-style: none;
+}
+
+.validation-summary-errors > ul > li {
+    list-style: none;
+    color: #e61313;
+}
