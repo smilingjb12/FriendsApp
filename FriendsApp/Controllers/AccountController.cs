@@ -30,6 +30,7 @@ namespace FriendsApp.Controllers
                 return RedirectToAction("Index", "Home");
             }
             user.IsActivated = true;
+            db.SaveChanges();
             TempData["success"] = "Your account has been activated. You can sign in now";
             return RedirectToAction("Index", "Home");
         }
